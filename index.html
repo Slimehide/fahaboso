@@ -3,27 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>FAHABOSO - Take the hotel experience home</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<meta name="description" content="FAHABOSO showcases carefully selected, beautifully crafted and appealing products that customers can bring home.">
 	<link rel="icon" type="image/png" href="img/fav.png"/>
+	<link rel="stylesheet" href="css/aos.css">
 </head>
 <body>
-	<header>
+	<header data-aos="fade-down">
 		<div class="container">
 			<div class="outer__header">
 				<div class="left__header">
-					<a href="#">
+					<a href="index.html">
 						<img src="img/logo.svg" alt="logo">
 					</a>
 				</div>
 				<div class="right__header">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Products</a></li>
-						<li><a href="#">Partnerships</a></li>
-						<li><a href="#">Contact Us</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#" class="scrollable__button" data-block="about">About Us</a></li>
+						<li><a href="#" class="scrollable__button" data-block="products">Products</a></li>
+						<li><a href="#" class="scrollable__button" data-block="partners">Partnerships</a></li>
+						<li><a href="mailto:info@fahaboso.com">Contact Us</a></li>
 					</ul>
 					<a href="#" class="menu__button">
 						<span></span>
@@ -31,15 +33,15 @@
 						<span></span>
 					</a>
 					<div class="button__header">
-						<a href="#">Our ILO</a>
+						<a href="http://ilocx.com/fahaboso" target="_blank">Our ILO</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-	<div class="first__back">
+	<div class="first__back" data-aos="zoom-in">
 		<div class="container">
-			<div class="outer__first">
+			<div class="outer__first" data-aos="fade-right" data-aos-delay="400">
 				<h1>Take the hotel <br> experience home</h1>
 				<p><span>FAHABOSO</span> showcases carefully selected, beautifully crafted and appealing products that customers can bring home.</p>
 				<div class="first__button">
@@ -48,35 +50,35 @@
 			</div>
 		</div>
 	</div>
-	<div class="about__block">
-		<div class="about__main">
+	<div class="about__block" id="about">
+		<div class="about__main" data-aos="zoom-in">
 			<div class="about__info">
-				<div class="info__image">
+				<div class="info__image" data-aos="fade-up" data-aos-delay="300">
 					<img src="img/about1.jpg" alt="about">
 				</div>
-				<div class="info__text">
+				<div class="info__text" data-aos="fade-left" data-aos-delay="300">
 					<h2>About Us</h2>
 					<p><span>FAHABOSO</span> is a hand-picked, hands-on, curated, luxury mass market sales platform. By marrying excellence with common sense, we bring bottom-line financial strategy to the luxury marketplace.</p>
 				</div>
 			</div>
 			<div class="about__bottom">
-				<div class="bottom__txt">
+				<div class="bottom__txt" data-aos="fade-right" data-aos-delay="300">
 					<p>Our team was founded by marketing and strategy specialists from multiple industries, who have collaborated to form <span>FAHABOSO</span>.</p>
 					<p>Using our unique distribution model, we can offer exclusive products in multiple international markets, to large numbers of consumers across the globe.</p>
 				</div>
-				<div class="bottom__image">
+				<div class="bottom__image" data-aos="fade-up" data-aos-delay="300">
 					<img src="img/about2.jpg" alt="about">
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="products__block">
+	<div class="products__block" id="products">
 		<div class="container">
 			<div class="outer__products">
-				<div class="head__products">
+				<div class="head__products" data-aos="fade-down">
 					<h2>Our Products</h2>
 				</div>
-				<div class="products__txt">
+				<div class="products__txt" data-aos="fade-up">
                     <div class="product__elem">
                     	<p>Luxury and boutique hotels are home to exclusive products and toiletries that we’d all love to take home. For example, everyone knows that luxury hotel towels offer unparalleled levels of softness.</p>
                     	<p>But it doesn’t stop there. Hotels exhibit a variety of unique luxury items; from the shampoo and conditioner, to cushions, bathrobes, even books, record players and artworks.</p>
@@ -86,21 +88,21 @@
                     </div>
 				</div>
 				<div class="products__inner">
-					<div class="long__product" style="background:url('img/product1.jpg')">
+					<div class="long__product" data-aos="fade-right" style="background:url('img/product1.jpg')">
 						<div class="product__quote">
 							<span><img src="img/quote.png" alt="quote"></span>
 							<p>To put it simply, FAHABOSO is the minibar of luxury items.</p>
 						</div>
 					</div>
-					<div class="small__product" style="background:url('img/product2.jpg')"></div>
-					<div class="small__product" style="background:url('img/product3.jpg')"></div>
+					<div class="small__product" data-aos="zoom-in" style="background:url('img/product2.jpg')"></div>
+					<div class="small__product" data-aos="zoom-in" style="background:url('img/product3.jpg')"></div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- <div class="partnerships__block">
+	<div class="partnerships__block" id="partners" data-aos="zoom-in">
 		<div class="outer__partnerships">
-			<div class="partnerships__text">
+			<div class="partnerships__text" data-aos="fade-right">
 				<div class="inner__partnerships--text">
 					<h2>Partnerships</h2>
 					<p>FAHABOSO has developed a groundbreaking all-natural ‘spa in your shower’ experience, so good and fresh that you’ll want to bring it home.</p>
@@ -109,37 +111,37 @@
 				</div>
 			</div>
 			<div class="partnerships__images">
-				<div class="main__image">
+				<div class="main__image" data-aos="zoom-in" data-aos-delay="0">
 					<img src="img/main1.jpg" alt="main">
 				</div>
-				<div class="side__image">
+				<div class="side__image" data-aos="zoom-in" data-aos-delay="300">
 					<img src="img/side1.jpg" alt="side">
 				</div>
 			</div>
 		</div>
-	</div> -->
-	<!-- <div class="why__ilo">
+	</div>
+	<div class="why__ilo" data-aos="zoom-in">
 		<div class="outer__ilo">
-			<div class="image__ilo">
+			<div class="image__ilo" data-aos="fade-right" data-aos-delay="300">
 				<img src="img/mac.png" alt="mac">
 			</div>
-			<div class="text__ilo">
+			<div class="text__ilo" data-aos="fade-left" data-aos-delay="300">
 				<h2>Why an ILO?</h2>
 				<p>Raising capital is important, but so is building awareness. An Initial License Offering (ILO) builds a team of fully-fledged marketers to sell products en masse, on commission.</p>
 				<p>This attracted FAHABOSO to ILOCX. We’re raising money to help you take the hotel experience home.</p>
 				<div class="ilo__visit">
-					<a href="#">Visit ILOCX</a>
+					<a href="http://ilocx.com/fahaboso" target="_blank">Visit ILOCX</a>
 				</div>
 			</div>
 		</div>
-	</div> -->
-	<!-- <footer>
+	</div>
+	<footer>
 		<div class="container">
 			<div class="outer__footer">
 				<div class="top__footer">
 					<div class="elem__foot">
 						<div class="foot__logo">
-							<a href="#">
+							<a href="index.html">
 								<img src="img/footlogo.svg" alt="footlogo">
 							</a>
 						</div>
@@ -147,12 +149,12 @@
 					</div>
 					<div class="foot__ul">
 						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Products</a></li>
-							<li><a href="#">Partnerships</a></li>
-							<li><a href="#">Contact Us</a></li>
-							<li><a href="#">Our ILO</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#" class="scrollable__button" data-block="about">About Us</a></li>
+							<li><a href="#" class="scrollable__button" data-block="products">Products</a></li>
+							<li><a href="#" class="scrollable__button" data-block="partners">Partnerships</a></li>
+							<li><a href="mailto:info@fahaboso.com">Contact Us</a></li>
+							<li><a href="http://ilocx.com/fahaboso" target="_blank">Our ILO</a></li>
 						</ul>
 					</div>
 					<div class="top__button">
@@ -162,17 +164,23 @@
 				<div class="bottom__footer">
 					<p>Copyright © 2020 FAHABOSO LTD. All rights reserved.</p>
 					<ul>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Cookie Policy</a></li>
+						<li><a href="privacy.html">Privacy Policy</a></li>
+						<li><a href="cookie.html">Cookie Policy</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-	</footer> -->
+	</footer>
 	<script
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
+  	<script src="js/aos.js"></script>
+  	<script>
+  		AOS.init({
+  			once:true
+  		});
+  	</script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
